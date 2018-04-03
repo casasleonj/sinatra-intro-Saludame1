@@ -1,12 +1,12 @@
 require 'sinatra'
-#ruta
 get '/' do
-#unless params[:nombre] || params[:nombre] == "" 
+if params[:nombre] == ''
   "<h1>Hola desconocido!</h1>"
-#else
- # "<h1>Hola #{params[:nombre].capitalize}!</h1>"
-#end
+elsif params[:nombre] == nil
+	"<h1>Hola desconocido!</h1>"
+elsif params[:nombre] == false
+	"<h1>Hola desconocido!</h1>"
+else
+ "<h1>Hola #{params[:nombre].capitalize}!</h1>"
 end
-get '/:nombre' do
-	"<h1>Hola #{params[:nombre].capitalize}!</h1>"
 end
