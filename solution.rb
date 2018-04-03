@@ -1,10 +1,7 @@
 require 'sinatra'
 #ruta
-get '/' do
-  nombre = params[:nombre]
-  if nombre
-  	"<h1>hola #{nombre.capitalize}!</h1>"
-  else
-  	"<h1>hola desconocido</h1>"
-  end
+get '/:nombre' do
+  
+  "<h1>hola #{params[:nombre].capitalize}!</h1>"
+ 
 end
