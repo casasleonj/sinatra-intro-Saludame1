@@ -2,6 +2,6 @@ require 'sinatra'
 #ruta
 get '/:nombre' do
   
-  "<h1>hola #{params[:nombre].capitalize}!</h1>"
+  "<h1>Hola #{params[:nombre].capitalize}!</h1>"
  
 end
