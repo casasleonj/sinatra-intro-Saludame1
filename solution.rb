@@ -1,4 +1,4 @@
-rrequire 'sinatra'
+require 'sinatra'
 #ruta
 get '/' do
 unless params[:nombre]
