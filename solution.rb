@@ -7,6 +7,6 @@ else
   "<h1>Hola #{params[:nombre].capitalize}!</h1>"
 end
 end
-get '/:nombre' do
-	"<h1>Hola #{params[:nombre].capitalize}!</h1>"
-end
+#get '/:nombre' do
+#	"<h1>Hola #{params[:nombre].capitalize}!</h1>"
+#end
