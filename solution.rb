@@ -1,7 +1,9 @@
-require 'sinatra'
+rrequire 'sinatra'
 #ruta
-get '/:nombre' do
-  
+get '/' do
+unless params[:nombre]
+  "Hola desconocido!"
+else
   "<h1>Hola #{params[:nombre].capitalize}!</h1>"
- 
+end
 end
